@@ -9,7 +9,7 @@ from pathlib import Path
 import vertexai
 from vertexai.preview import reasoning_engines
 
-PROJECT_ID = "your-gcp-project-id"
+PROJECT_ID = "a2a-project-494300"
 REGION = "us-central1"
 STAGING_BUCKET = f"gs://{PROJECT_ID}-a2a-staging"
 GCS_DIR_NAME = "a2a-lab"

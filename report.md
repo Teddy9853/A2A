@@ -3,7 +3,7 @@
 **Course:** CS4680  
 **Assignment:** Agent-to-Agent (A2A) Hands-On Lab  
 **Student:** Tai Ji Chen
-**GitHub Repo:** YOUR_GITHUB_REPO_LINK
+**GitHub Repo:** (https://github.com/Teddy9853/A2A)
 
 ---
 
@@ -60,15 +60,9 @@ An intake agent could read the file, extract resume text, compare it against the
 I containerised the FastAPI A2A server with Docker and deployed it to Google Cloud Run. The deployment was performed using the provided shell script after replacing the placeholder `PROJECT_ID` with my own Google Cloud project ID.
 
 **Cloud Run Service URL:**  
-`https://YOUR-CLOUD-RUN-SERVICE-URL.a.run.app`
 
-After deployment, I updated the `url` field in the Agent Card so that the published card advertises the real Cloud Run endpoint rather than `http://localhost:8000`. I then redeployed and verified the cloud-hosted Agent Card using:
 
-```bash
-curl https://YOUR-CLOUD-RUN-SERVICE-URL.a.run.app/.well-known/agent.json
-```
 
-I also pointed the `A2AClient` at the Cloud Run URL and confirmed that the same echo response was returned from the deployed service.
 
 ### 4.2 What does `--allow-unauthenticated` do, and what are the security implications?
 
@@ -113,7 +107,7 @@ python cloud/deploy_agent_engine.py
 This packaged the wrapper class and deployed the agent to Vertex AI Agent Engine. The deployment printed a resource name and Engine ID, which I recorded below.
 
 **Engine ID:**  
-`YOUR_ENGINE_ID`
+
 
 To test the deployed agent, I used the Vertex AI SDK:
 
